@@ -295,14 +295,14 @@ public class HangHoa extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton7ActionPerformed
 
     private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
-        ChiTietDanhMuc ctdm = new ChiTietDanhMuc();
+        PhieuNhap ctdm = new PhieuNhap();
         ctdm.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jButton13ActionPerformed
 
     private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
 
-        ChiTietDanhMuc sp = new ChiTietDanhMuc();
+        PhieuNhap sp = new PhieuNhap();
         sp.setVisible(true);
         this.dispose();// TODO add your handling code here:
     }//GEN-LAST:event_jButton14ActionPerformed
