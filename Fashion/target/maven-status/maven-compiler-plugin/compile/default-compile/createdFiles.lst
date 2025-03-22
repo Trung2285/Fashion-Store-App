@@ -1,10 +1,7 @@
 Hanghoa\ChiTietDanhMuc$2.class
 Hanghoa\HangHoa$4.class
 Login$3.class
-<<<<<<< HEAD
-=======
 KhachHang\KhachHang$3.class
->>>>>>> 4bf1933534e5083a26218f9b0c43b06e039efe00
 Trang1$3.class
 Sign_in$2.class
 Hanghoa\DoiTac$4.class
@@ -16,22 +13,17 @@ Hanghoa\DoiTac$1.class
 Hanghoa\ChiTietDanhMuc.class
 HoaDon\HoaDon$1.class
 Hanghoa\HangHoa$1.class
-<<<<<<< HEAD
-=======
 HoaDon\HoaDon$2.class
 KhachHang\KhachHang$2.class
->>>>>>> 4bf1933534e5083a26218f9b0c43b06e039efe00
 Login.class
 Hanghoa\ChiTietDanhMuc$1.class
 Hanghoa\HangHoa$7.class
 Hanghoa\HangHoa$3.class
 Sign_in.class
 Hanghoa\DoiTac$3.class
-<<<<<<< HEAD
-=======
+DangNhap.class
 HoaDon\HoaDon$5.class
 KhachHang\KhachHang$5.class
->>>>>>> 4bf1933534e5083a26218f9b0c43b06e039efe00
 Trang1$1.class
 Hanghoa\ChiTietDanhMuc$5.class
 Hanghoa\ChiTietDanhMuc$8.class
@@ -39,18 +31,9 @@ Hanghoa\DoiTac$2.class
 Hanghoa\HangHoa$6.class
 Hanghoa\ChiTietDanhMuc$7.class
 com\mycompany\fashion\Fashion.class
-<<<<<<< HEAD
 gradient_color\JButtonGradient.class
 Hanghoa\HangHoa.class
-Trang1$2.class
-Trang1.class
-Hanghoa\ChiTietDanhMuc$4.class
-Login$2.class
-Hanghoa\HangHoa$5.class
-gradient_color\JPanelGradient.class
-Login$4.class
-=======
-Hanghoa\HangHoa.class
+DangNhap$2.class
 HoaDon\HoaDon$3.class
 KhachHang\KhachHang.class
 Trang1$2.class
@@ -60,10 +43,11 @@ Hanghoa\ChiTietDanhMuc$4.class
 KhachHang\KhachHang$1.class
 Login$2.class
 Hanghoa\HangHoa$5.class
+DangNhap$1.class
 HoaDon\HoaDon.class
+gradient_color\JPanelGradient.class
 Login$4.class
 KhachHang\KhachHang$4.class
->>>>>>> 4bf1933534e5083a26218f9b0c43b06e039efe00
 Hanghoa\ChiTietDanhMuc$6.class
 Sign_in$1.class
 Hanghoa\HangHoa$2.class
