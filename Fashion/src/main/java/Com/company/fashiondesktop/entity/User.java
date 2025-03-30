@@ -60,6 +60,11 @@ public class User {
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
     private List<Order> listOrders;
 
+    public User(int userId, String password) {
+        this.userId = userId;
+        this.password = password;
+    }
+    
     public Address getAddress() {
         return address;
     }
