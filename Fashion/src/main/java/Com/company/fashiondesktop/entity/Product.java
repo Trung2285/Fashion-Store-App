@@ -47,8 +47,8 @@ public class Product {
         @JoinTable(name = "product_type", joinColumns = @JoinColumn(name = "product_id"), inverseJoinColumns = @JoinColumn(name = "type_id"))
         private List<Type> listTypes;
 
-        @OneToMany(mappedBy = "product", cascade = CascadeType.ALL)
-        private List<Image> listImages;
+//        @OneToMany(mappedBy = "product", cascade = CascadeType.ALL)
+//        private List<Image> listImages;
 
         @OneToMany(mappedBy = "product", cascade = CascadeType.ALL)
         private List<Review> listReviews;
@@ -144,13 +144,13 @@ public class Product {
                 this.listTypes = listTypes;
         }
 
-        public List<Image> getListImages() {
-                return listImages;
-        }
-
-        public void setListImages(List<Image> listImages) {
-                this.listImages = listImages;
-        }
+//        public List<Image> getListImages() {
+//                return listImages;
+//        }
+//
+//        public void setListImages(List<Image> listImages) {
+//                this.listImages = listImages;
+//        }
 
         public List<Review> getListReviews() {
                 return listReviews;

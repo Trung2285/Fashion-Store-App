@@ -30,5 +30,5 @@ public class OrderDetail {
                         jakarta.persistence.CascadeType.REFRESH
         })
         @JoinColumn(name = "order_id")
-        private Order cart;
+        private Order order;
 }

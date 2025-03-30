@@ -32,7 +32,7 @@ public class Test {
         // Lấy danh sách tất cả User
         System.out.println("Danh sách User trong hệ thống:");
         for (User user : userDAO.findAll()) {
-            System.out.println("ID: " + user.getUserName() + ", Username: " + user.getPassword());
+            System.out.println("ID: " + user.getUsername() + ", Username: " + user.getPassword());
         }
     }
 }
