@@ -30,7 +30,7 @@ public class CartDetail {
                         jakarta.persistence.CascadeType.DETACH,
                         jakarta.persistence.CascadeType.REFRESH
         })
-        @JoinColumn(name = "cartid")
+        @JoinColumn(name = "cart_id")
         private Cart cart;
 
 }
