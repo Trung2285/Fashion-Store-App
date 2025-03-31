@@ -7,7 +7,7 @@
     <session-factory>
         <!-- ✅ Kết nối SQL Server -->
         <property name="hibernate.connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
-        <property name="hibernate.connection.url">jdbc:sqlserver://localhost:1433;databaseName=FashionStore;encrypt=true;trustServerCertificate=true</property>
+        <property name="hibernate.connection.url">jdbc:sqlserver://localhost:1433;databaseName=example_1;encrypt=true;trustServerCertificate=true</property>
         <property name="hibernate.connection.username">sa</property>
         <property name="hibernate.connection.password">20082005@Ho</property>
         <property name="hibernate.connection.autocommit">true</property>
@@ -20,7 +20,6 @@
         <property name="hibernate.hbm2ddl.auto">update</property>
         <!-- ✅ Khai báo Entity -->
         <mapping class="Com.company.fashiondesktop.entity.User"/>
-        <mapping class="Com.company.fashiondesktop.entity.Address"/>
         <mapping class="Com.company.fashiondesktop.entity.Cart"/>
         <mapping class="Com.company.fashiondesktop.entity.CartDetail"/>
         <mapping class="Com.company.fashiondesktop.entity.Order"/>
@@ -29,13 +28,15 @@
         <mapping class="Com.company.fashiondesktop.entity.Product"/>
         <mapping class="Com.company.fashiondesktop.entity.PurchaseOrderDetail"/>
         <mapping class="Com.company.fashiondesktop.entity.PurchaseOrder"/>
-        <mapping class="Com.company.fashiondesktop.entity.Review"/>
         <mapping class="Com.company.fashiondesktop.entity.Role"/>
         <mapping class="Com.company.fashiondesktop.entity.ShippingMethod"/>
         <mapping class="Com.company.fashiondesktop.entity.Supplier"/>
-        <mapping class="Com.company.fashiondesktop.entity.Type"/>
         <mapping class="Com.company.fashiondesktop.entity.WishList"/>
         <mapping class="Com.company.fashiondesktop.entity.WishListDetail"/>
+        <mapping class="Com.company.fashiondesktop.entity.City"/>
+        <mapping class="Com.company.fashiondesktop.entity.Country"/>
+        <mapping class="Com.company.fashiondesktop.entity.District"/>
+        <mapping class="Com.company.fashiondesktop.entity.Ward"/>
 
     </session-factory>
 </hibernate-configuration>

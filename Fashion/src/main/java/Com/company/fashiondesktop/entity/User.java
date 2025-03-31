@@ -39,14 +39,14 @@ public class User {
             jakarta.persistence.CascadeType.DETACH,
             jakarta.persistence.CascadeType.REFRESH
     })
-    @JoinColumn(name = "address_id")
-    private Address address;
+    @JoinColumn(name = "wardID")
+    private Ward ward;
     //
     // private Ward sellingWard;
 
-    @OneToMany(mappedBy = "user")
-    private List<Review> listReviews;
-
+//    @OneToMany(mappedBy = "user")
+//    private List<Review> listReviews;
+//
     @ManyToMany(fetch = FetchType.EAGER,cascade = {
             jakarta.persistence.CascadeType.PERSIST,
             jakarta.persistence.CascadeType.MERGE,
@@ -67,12 +67,20 @@ public class User {
     public User() {
     }
 
-    public Address getAddress() {
-        return address;
+//    public Address getAddress() {
+//        return ward;
+//    }
+//
+//    public void setAddress(Address address) {
+//        this.ward = address;
+//    }
+
+    public Ward getWard() {
+        return ward;
     }
 
-    public void setAddress(Address address) {
-        this.address = address;
+    public void setWard(Ward ward) {
+        this.ward = ward;
     }
 
     public String getEmail() {
@@ -92,13 +100,13 @@ public class User {
         this.listOrders = listOrders;
     }
 
-    public List<Review> getListReviews() {
-        return listReviews;
-    }
-
-    public void setListReviews(List<Review> listReviews) {
-        this.listReviews = listReviews;
-    }
+//    public List<Review> getListReviews() {
+//        return listReviews;
+//    }
+//
+//    public void setListReviews(List<Review> listReviews) {
+//        this.listReviews = listReviews;
+//    }
 
     public List<Role> getListRoles() {
         return listRoles;

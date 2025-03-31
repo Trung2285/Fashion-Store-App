@@ -29,8 +29,8 @@ public class Supplier {
     private List<PurchaseOrder> purchaseOrder;
 
     @ManyToOne
-    @JoinColumn(name = "address_address_id")
-    private Address address;
+    @JoinColumn(name = "wardID")
+    private Ward ward;
 
 
     public Supplier() {

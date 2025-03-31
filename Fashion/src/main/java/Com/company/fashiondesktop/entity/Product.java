@@ -38,20 +38,20 @@ public class Product {
         private float avgStars;
 
 //        @JsonIgnore
-        @ManyToMany(fetch = FetchType.LAZY, cascade = {
-                        CascadeType.PERSIST,
-                        CascadeType.MERGE,
-                        CascadeType.DETACH,
-                        CascadeType.REFRESH
-        })
-        @JoinTable(name = "product_type", joinColumns = @JoinColumn(name = "product_id"), inverseJoinColumns = @JoinColumn(name = "type_id"))
-        private List<Type> listTypes;
+//        @ManyToMany(fetch = FetchType.LAZY, cascade = {
+//                        CascadeType.PERSIST,
+//                        CascadeType.MERGE,
+//                        CascadeType.DETACH,
+//                        CascadeType.REFRESH
+//        })
+//        @JoinTable(name = "product_type", joinColumns = @JoinColumn(name = "product_id"), inverseJoinColumns = @JoinColumn(name = "type_id"))
+//        private List<Type> listTypes;
 
 //        @OneToMany(mappedBy = "product", cascade = CascadeType.ALL)
 //        private List<Image> listImages;
 
-        @OneToMany(mappedBy = "product", cascade = CascadeType.ALL)
-        private List<Review> listReviews;
+//        @OneToMany(mappedBy = "product", cascade = CascadeType.ALL)
+//        private List<Review> listReviews;
 
         @OneToMany(mappedBy = "product", cascade = CascadeType.ALL)
         private List<OrderDetail> listOrderDetails;
@@ -136,13 +136,13 @@ public class Product {
                 this.avgStars = avgStars;
         }
 
-        public List<Type> getListTypes() {
-                return listTypes;
-        }
-
-        public void setListTypes(List<Type> listTypes) {
-                this.listTypes = listTypes;
-        }
+//        public List<Type> getListTypes() {
+//                return listTypes;
+//        }
+//
+//        public void setListTypes(List<Type> listTypes) {
+//                this.listTypes = listTypes;
+//        }
 
 //        public List<Image> getListImages() {
 //                return listImages;
@@ -152,13 +152,13 @@ public class Product {
 //                this.listImages = listImages;
 //        }
 
-        public List<Review> getListReviews() {
-                return listReviews;
-        }
-
-        public void setListReviews(List<Review> listReviews) {
-                this.listReviews = listReviews;
-        }
+//        public List<Review> getListReviews() {
+//                return listReviews;
+//        }
+//
+//        public void setListReviews(List<Review> listReviews) {
+//                this.listReviews = listReviews;
+//        }
 
         public List<OrderDetail> getListOrderDetails() {
                 return listOrderDetails;

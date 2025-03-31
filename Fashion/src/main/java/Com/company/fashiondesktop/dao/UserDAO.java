@@ -90,11 +90,13 @@ public class UserDAO implements GenericDAO<User, Integer>{
     }
     
     // 🆕 Tìm User theo tên đăng nhập (username)
+    // 🆕 Tìm User theo tên đăng nhập (username)
     public User findByUsername(String username) {
         try (Session session = HibernateUtil.getSession()) {
-            return session.createQuery("FROM User WHERE username = :username", User.class)
-                          .setParameter("username", username)
-                          .uniqueResult();
+            List<User> users = session.createQuery("FROM User WHERE username = :username", User.class)
+                    .setParameter("username", username)
+                    .getResultList();
+            return users.isEmpty() ? null : users.get(0); // Trả về user đầu tiên nếu có
         }
     }
     
