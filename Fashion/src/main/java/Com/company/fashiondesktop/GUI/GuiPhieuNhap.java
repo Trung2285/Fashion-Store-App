@@ -11,12 +11,12 @@ package Com.company.fashiondesktop.GUI;
  *
  * @author levan
  */
-public class PhieuNhap extends javax.swing.JFrame {
+public class GuiPhieuNhap extends javax.swing.JFrame {
 
     /**
      * Creates new form ChiTietDanhMuc
      */
-    public PhieuNhap() {
+    public GuiPhieuNhap() {
         initComponents();
     }
 
@@ -195,7 +195,6 @@ public class PhieuNhap extends javax.swing.JFrame {
             }
         });
 
-        jButton9.setIcon(new javax.swing.ImageIcon("E:\\SHOPBANHANG\\Fashion-Store-App\\Fashion\\src\\main\\resources\\Icon\\magnifier.png")); // NOI18N
         jButton9.setText("Tìm kiếm");
         jButton9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -293,19 +292,15 @@ public class PhieuNhap extends javax.swing.JFrame {
         jLabel1.setText("Mã nhà cung cấp");
 
         jButton8.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
-        jButton8.setIcon(new javax.swing.ImageIcon("E:\\SHOPBANHANG\\Fashion-Store-App\\Fashion\\src\\main\\resources\\Icon\\delete.png")); // NOI18N
         jButton8.setText("Xóa");
 
         jButton10.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
-        jButton10.setIcon(new javax.swing.ImageIcon("E:\\SHOPBANHANG\\Fashion-Store-App\\Fashion\\src\\main\\resources\\Icon\\fix.png")); // NOI18N
         jButton10.setText("Sửa");
 
         jButton11.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
-        jButton11.setIcon(new javax.swing.ImageIcon("E:\\SHOPBANHANG\\Fashion-Store-App\\Fashion\\src\\main\\resources\\Icon\\plus.png")); // NOI18N
         jButton11.setText("Thêm");
 
         jButton12.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
-        jButton12.setIcon(new javax.swing.ImageIcon("E:\\SHOPBANHANG\\Fashion-Store-App\\Fashion\\src\\main\\resources\\Icon\\loading-arrow.png")); // NOI18N
         jButton12.setText("Nhập lại");
 
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
@@ -367,19 +362,15 @@ public class PhieuNhap extends javax.swing.JFrame {
         jPanel3.setBackground(new java.awt.Color(0, 204, 225));
 
         jButton16.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
-        jButton16.setIcon(new javax.swing.ImageIcon("E:\\SHOPBANHANG\\Fashion-Store-App\\Fashion\\src\\main\\resources\\Icon\\loading-arrow.png")); // NOI18N
         jButton16.setText("Nhập lại");
 
         jButton13.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
-        jButton13.setIcon(new javax.swing.ImageIcon("E:\\SHOPBANHANG\\Fashion-Store-App\\Fashion\\src\\main\\resources\\Icon\\delete.png")); // NOI18N
         jButton13.setText("Xóa");
 
         jButton15.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
-        jButton15.setIcon(new javax.swing.ImageIcon("E:\\SHOPBANHANG\\Fashion-Store-App\\Fashion\\src\\main\\resources\\Icon\\plus.png")); // NOI18N
         jButton15.setText("Thêm");
 
         jButton14.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
-        jButton14.setIcon(new javax.swing.ImageIcon("E:\\SHOPBANHANG\\Fashion-Store-App\\Fashion\\src\\main\\resources\\Icon\\fix.png")); // NOI18N
         jButton14.setText("Sửa");
 
         jLabel9.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
@@ -546,7 +537,7 @@ public class PhieuNhap extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton9ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        HangHoa dm = new  HangHoa();
+        GuiHangHoa dm = new  GuiHangHoa();
         dm.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
@@ -586,14 +577,18 @@ public class PhieuNhap extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(PhieuNhap.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(GuiPhieuNhap.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(PhieuNhap.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(GuiPhieuNhap.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(PhieuNhap.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(GuiPhieuNhap.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(PhieuNhap.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(GuiPhieuNhap.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
@@ -602,7 +597,7 @@ public class PhieuNhap extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new PhieuNhap().setVisible(true);
+                new GuiPhieuNhap().setVisible(true);
             }
         });
     }

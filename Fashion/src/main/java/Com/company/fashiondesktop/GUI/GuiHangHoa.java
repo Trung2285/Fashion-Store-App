@@ -10,12 +10,12 @@ package Com.company.fashiondesktop.GUI;
  *
  * @author levan
  */
-public class HangHoa extends javax.swing.JFrame {
+public class GuiHangHoa extends javax.swing.JFrame {
 
-    /**
+    /**A
      * Creates new form DanhMuc
      */
-    public HangHoa() {
+    public GuiHangHoa() {
         initComponents();
     }
 
@@ -297,14 +297,14 @@ public class HangHoa extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton7ActionPerformed
 
     private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
-        ChiTietDanhMuc ctdm = new ChiTietDanhMuc();
+        GuiChiTietDanhMuc ctdm = new GuiChiTietDanhMuc();
         ctdm.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jButton13ActionPerformed
 
     private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
         // TODO add your handling code here:
-        PhieuNhap dt = new PhieuNhap();
+        GuiPhieuNhap dt = new GuiPhieuNhap();
         dt.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jButton14ActionPerformed
@@ -321,7 +321,7 @@ public class HangHoa extends javax.swing.JFrame {
 
     private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
         // TODO add your handling code here:
-        SanPham dt = new SanPham();
+        GuiSanPham dt = new GuiSanPham();
         dt.setVisible(true);
         this.dispose();
         
@@ -344,14 +344,18 @@ public class HangHoa extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(HangHoa.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(GuiHangHoa.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(HangHoa.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(GuiHangHoa.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(HangHoa.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(GuiHangHoa.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(HangHoa.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(GuiHangHoa.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
@@ -360,7 +364,7 @@ public class HangHoa extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new HangHoa().setVisible(true);
+                new GuiHangHoa().setVisible(true);
             }
         });
     }

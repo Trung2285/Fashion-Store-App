@@ -6,9 +6,9 @@ import Com.company.fashiondesktop.util.PasswordUtil;
 
 public class BLUser {
     private UserDAO userDAO;
-
-
-
+    public BLUser() {
+        this.userDAO = new UserDAO(); // Gán đối tượng tại đây
+    }
     public User login(String username, String password) {
         User user = userDAO.findByUsername(username);
         if (user != null && PasswordUtil.checkPassword(password, user.getPassword())) {

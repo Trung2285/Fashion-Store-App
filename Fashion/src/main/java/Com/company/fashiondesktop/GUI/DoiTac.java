@@ -258,7 +258,7 @@ public class DoiTac extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addComponent(jButton4))
                     .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(141, 141, 141))
+                .addGap(24, 24, 24))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -306,7 +306,7 @@ public class DoiTac extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        HangHoa dm = new  HangHoa();
+        GuiHangHoa dm = new  GuiHangHoa();
         dm.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jButton1ActionPerformed

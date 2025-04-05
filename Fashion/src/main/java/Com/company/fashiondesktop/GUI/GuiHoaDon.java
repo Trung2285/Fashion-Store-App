@@ -10,12 +10,12 @@ package Com.company.fashiondesktop.GUI;
  *
  * @author hohuu
  */
-public class HoaDon extends javax.swing.JPanel {
+public class GuiHoaDon extends javax.swing.JPanel {
 
     /**
      * Creates new form HoaDon
      */
-    public HoaDon() {
+    public GuiHoaDon() {
         initComponents();
     }
 
@@ -489,7 +489,7 @@ public class HoaDon extends javax.swing.JPanel {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        HangHoa dm = new  HangHoa();
+        GuiHangHoa dm = new  GuiHangHoa();
         dm.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jButton1ActionPerformed

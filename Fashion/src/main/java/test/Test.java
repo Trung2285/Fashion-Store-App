@@ -8,16 +8,16 @@ public class Test {
     public static void main(String[] args) {
         UserDAO userDAO = new UserDAO();
         BLUser blUser = new BLUser();
-        // 🆕 1. Thêm User mới
-//        User newUser = new User();
-//        newUser.setFullName(" ho huu huy");
-//        newUser.setUsername("nguyenvana");
-//        newUser.setPassword("123456");
-//        newUser.setEmail("nguyenvana@example.com");
-//        newUser.setPhoneNumber("0123456789");
-//        newUser.setGender(true);
-//        userDAO.save(newUser);
-//        System.out.println("✅ Đã thêm User mới!");
+//         🆕 1. Thêm User mới
+        User newUser = new User();
+        newUser.setFullName(" ho huu huy");
+        newUser.setUsername("nguyenvana");
+        newUser.setPassword("123456");
+        newUser.setEmail("nguyenvana@example.com");
+        newUser.setPhoneNumber("0123456789");
+        newUser.setGender(true);
+        userDAO.save(newUser);
+        System.out.println("✅ Đã thêm User mới!");
 
         // 🆕 2. Đăng nhập đúng mật khẩu
         User loginUser = blUser.login("nguyenvana", "123456");
