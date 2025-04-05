@@ -4,34 +4,61 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2c2d30f3-ffad-45a9-8592-fc84b22728e8" name="Changes" comment="mấy chú code hibernate ma` tạo entity đ khớp với database lạy">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/entity/City.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/entity/Country.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/entity/District.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/entity/Ward.java" afterDir="false" />
+    <list default="true" id="2c2d30f3-ffad-45a9-8592-fc84b22728e8" name="Changes" comment="unversioned">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/dao/SanPhamDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/dao/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/dao/UserDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/entity/Address.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/entity/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/entity/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/entity/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/entity/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/entity/Review.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/entity/Supplier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/entity/Supplier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/entity/Type.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/dao/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/SCHEMAOBJECT/UserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/entity/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/SCHEMACLASS/Cart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/entity/CartDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/SCHEMACLASS/CartDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/entity/City.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/SCHEMACLASS/City.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/entity/Country.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/SCHEMACLASS/Country.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/entity/District.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/SCHEMACLASS/District.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/entity/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/SCHEMACLASS/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/entity/OrderDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/SCHEMACLASS/OrderDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/entity/PaymentType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/SCHEMACLASS/PaymentType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/entity/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/SCHEMACLASS/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/entity/PurchaseOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/SCHEMACLASS/PurchaseOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/entity/PurchaseOrderDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/SCHEMACLASS/PurchaseOrderDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/entity/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/SCHEMACLASS/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/entity/ShippingMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/SCHEMACLASS/ShippingMethod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/entity/Supplier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/SCHEMACLASS/Supplier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/SCHEMACLASS/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/entity/Ward.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/SCHEMACLASS/Ward.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/entity/WishList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/SCHEMACLASS/WishList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/entity/WishListDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/SCHEMACLASS/WishListDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/gui/APPMAIN.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/GUI/APPMAIN.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/gui/ChiTietDanhMuc.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/GUI/ChiTietDanhMuc.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/gui/ChiTietDanhMuc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/GUI/ChiTietDanhMuc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/gui/DangNhap.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/GUI/DangNhap.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/gui/DangNhap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/GUI/DangNhap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/gui/DoiTac.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/GUI/DoiTac.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/gui/DoiTac.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/GUI/DoiTac.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/gui/HangHoa.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/GUI/HangHoa.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/gui/HangHoa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/GUI/HangHoa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/gui/HoaDon.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/GUI/HoaDon.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/gui/HoaDon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/GUI/HoaDon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/gui/KhachHang.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/GUI/KhachHang.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/gui/KhachHang.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/GUI/KhachHang.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/gui/Login.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/GUI/Login.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/gui/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/GUI/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/gui/PhieuNhap.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/GUI/PhieuNhap.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/gui/PhieuNhap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/GUI/PhieuNhap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/gui/SanPham.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/GUI/SanPham.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/gui/SanPham.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/GUI/SanPham.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/gui/Sign_in.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/GUI/Sign_in.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/gui/Sign_in.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/GUI/Sign_in.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/gui/Trang1.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/GUI/Trang1.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/gui/Trang1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/GUI/Trang1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Com/company/fashiondesktop/service/SanPhamService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Image.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Image.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/test/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Com/company/fashiondesktop/entity/Address.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Com/company/fashiondesktop/entity/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Com/company/fashiondesktop/entity/Order.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Com/company/fashiondesktop/entity/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Com/company/fashiondesktop/entity/Product.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Com/company/fashiondesktop/entity/Review.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Com/company/fashiondesktop/entity/Supplier.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Com/company/fashiondesktop/entity/Supplier.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Com/company/fashiondesktop/entity/Type.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Com/company/fashiondesktop/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Com/company/fashiondesktop/entity/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Com/company/fashiondesktop/controller/SanPhamControler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Com/company/fashiondesktop/dao/SanPhamDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Com/company/fashiondesktop/dao/UserDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Com/company/fashiondesktop/dao/UserDAO.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/test/test.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/test/test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +98,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.DangNhap.executor": "Run",
     "Application.Test.executor": "Run",
     "Application.test.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -105,12 +133,40 @@
       <option name="project" value="LOCAL" />
       <updated>1743351894199</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="ma hoa mat khau ok">
+      <option name="closed" value="true" />
+      <created>1743401894719</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1743401894719</updated>
+    </task>
+    <task id="LOCAL-00004" summary="đã xóa">
+      <option name="closed" value="true" />
+      <created>1743844467600</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1743844467600</updated>
+    </task>
+    <task id="LOCAL-00005" summary="unversioned">
+      <option name="closed" value="true" />
+      <created>1743845443866</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1743845443866</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="qua dang so" />
     <MESSAGE value="mấy chú code hibernate ma` tạo entity đ khớp với database lạy" />
-    <option name="LAST_COMMIT_MESSAGE" value="mấy chú code hibernate ma` tạo entity đ khớp với database lạy" />
+    <MESSAGE value="ma hoa mat khau ok" />
+    <MESSAGE value="đã xóa" />
+    <MESSAGE value="build lai foder" />
+    <MESSAGE value="unversioned" />
+    <option name="LAST_COMMIT_MESSAGE" value="unversioned" />
   </component>
 </project>

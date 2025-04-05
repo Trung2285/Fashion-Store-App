@@ -2,7 +2,6 @@ Com\company\fashiondesktop\gui\HoaDon.class
 Com\company\fashiondesktop\gui\HangHoa$1.class
 Com\company\fashiondesktop\gui\DoiTac.class
 Com\company\fashiondesktop\gui\SanPham$8.class
-Com\company\fashiondesktop\entity\Review.class
 Com\company\fashiondesktop\gui\Trang1.class
 Com\company\fashiondesktop\gui\Sign_in$2.class
 Com\company\fashiondesktop\gui\Trang1$3.class
@@ -26,7 +25,6 @@ Com\company\fashiondesktop\gui\KhachHang$2.class
 Com\company\fashiondesktop\gui\DangNhap$1.class
 Com\company\fashiondesktop\gui\ChiTietDanhMuc$8.class
 Com\company\fashiondesktop\gui\HangHoa$3.class
-Com\company\fashiondesktop\entity\Address.class
 Com\company\fashiondesktop\gui\SanPham$10.class
 Com\company\fashiondesktop\gui\SanPham$2.class
 Com\company\fashiondesktop\entity\WishListDetail.class
@@ -46,7 +44,6 @@ Com\company\fashiondesktop\entity\Cart.class
 Com\company\fashiondesktop\gui\HoaDon$2.class
 Com\company\fashiondesktop\gui\PhieuNhap$6.class
 Com\company\fashiondesktop\gui\PhieuNhap$8.class
-Com\company\fashiondesktop\dao\SanPhamDao.class
 Com\company\fashiondesktop\entity\Order.class
 Com\company\fashiondesktop\gui\DoiTac$5.class
 Com\company\fashiondesktop\dao\GenericDAO.class
@@ -93,15 +90,14 @@ Com\company\fashiondesktop\gui\DoiTac$3.class
 Com\company\fashiondesktop\gui\KhachHang$5.class
 Com\company\fashiondesktop\gui\Login.class
 Com\company\fashiondesktop\gui\PhieuNhap$2.class
-Com\company\fashiondesktop\entity\Type.class
 Com\company\fashiondesktop\entity\PaymentType.class
 Com\company\fashiondesktop\gui\PhieuNhap$9.class
 Com\company\fashiondesktop\gui\APPMAIN.class
+test\Test.class
 Com\company\fashiondesktop\gui\HoaDon$5.class
 Com\company\fashiondesktop\gui\ChiTietDanhMuc$6.class
 Com\company\fashiondesktop\controller\SanPhamControler.class
 Image.class
 Com\company\fashiondesktop\dao\UserDAO.class
-test\test.class
 Com\company\fashiondesktop\gui\DangNhap.class
 Com\company\fashiondesktop\gui\DoiTac$4.class

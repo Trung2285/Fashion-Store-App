@@ -36,7 +36,7 @@
         <mapping class="Com.company.fashiondesktop.entity.City"/>
         <mapping class="Com.company.fashiondesktop.entity.Country"/>
         <mapping class="Com.company.fashiondesktop.entity.District"/>
-        <mapping class="Com.company.fashiondesktop.entity.Ward"/>
+        <mapping class="Com.company.fashiondesktop.entity.Ward"/> 
 
     </session-factory>
 </hibernate-configuration>
