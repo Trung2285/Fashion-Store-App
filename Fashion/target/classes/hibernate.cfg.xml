@@ -16,8 +16,12 @@
         <property name="hibernate.show_sql">true</property>
         <property name="hibernate.format_sql">true</property>
         <property name="hibernate.hbm2ddl.auto">update</property>
+<<<<<<< HEAD
         
         <!-- Khai báo Entity - ĐÃ SỬA THEO ĐÚNG PACKAGE SCHEMACLASS -->
+=======
+        <!-- ✅ Khai báo Entity -->
+>>>>>>> 83509cfe2adf59fbdaabc660c67aafccbc88729f
         <mapping class="Com.company.fashiondesktop.SCHEMACLASS.User"/>
         <mapping class="Com.company.fashiondesktop.SCHEMACLASS.Cart"/>
         <mapping class="Com.company.fashiondesktop.SCHEMACLASS.CartDetail"/>
