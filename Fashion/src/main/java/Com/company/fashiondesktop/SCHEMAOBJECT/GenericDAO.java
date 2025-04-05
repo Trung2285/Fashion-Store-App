@@ -1,4 +1,4 @@
-package Com.company.fashiondesktop.dao;
+package Com.company.fashiondesktop.SCHEMAOBJECT;
 import java.util.List;
 // T: Kiểu đối tượng (ví dụ: Student, Teacher, ...)
 //ID: Kiểu của khóa chính (Integer, Long, ...)
