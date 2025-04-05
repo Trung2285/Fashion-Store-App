@@ -1,36 +1,42 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+
 <hibernate-configuration>
     <session-factory>
-
-        <!-- Cấu hình kết nối SQL Server -->
+        <!-- ✅ Kết nối SQL Server -->
         <property name="hibernate.connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
-        <property name="hibernate.connection.url">jdbc:sqlserver://localhost:1433;databaseName=FashionStore1;encrypt=true;trustServerCertificate=true;</property>
+        <property name="hibernate.connection.url">jdbc:sqlserver://localhost:1433;databaseName=FashionStore1;encrypt=true;trustServerCertificate=true</property>
         <property name="hibernate.connection.username">sa</property>
         <property name="hibernate.connection.password">sa</property>
+        <property name="hibernate.connection.autocommit">true</property>
 
-        <!-- Cấu hình Hibernate -->
+
+        <!-- ✅ Cấu hình Hibernate -->
         <property name="hibernate.dialect">org.hibernate.dialect.SQLServerDialect</property>
         <property name="hibernate.show_sql">true</property>
         <property name="hibernate.format_sql">true</property>
         <property name="hibernate.hbm2ddl.auto">update</property>
-
-        <!-- Khai báo entity classes -->
-        <mapping class="com.company.fashiondesktop.entity.Address"/>
-        <mapping class="com.company.fashiondesktop.entity.Cart"/>
-        <mapping class="com.company.fashiondesktop.entity.CartDetail"/>
-        <mapping class="com.company.fashiondesktop.entity.Order"/>
-        <mapping class="com.company.fashiondesktop.entity.OrderDetail"/>
-        <mapping class="com.company.fashiondesktop.entity.PaymentType"/>
-        <mapping class="com.company.fashiondesktop.entity.Product"/>
-        <mapping class="com.company.fashiondesktop.entity.PurchaseOrder"/>
-        <mapping class="com.company.fashiondesktop.entity.PurchaseOrderDetail"/>
-        <mapping class="com.company.fashiondesktop.entity.Review"/>
-        <mapping class="com.company.fashiondesktop.entity.Role"/>
-        <mapping class="com.company.fashiondesktop.entity.ShippingMethod"/>
-        <mapping class="com.company.fashiondesktop.entity.Supplier"/>
-        <mapping class="com.company.fashiondesktop.entity.Type"/>
-        <mapping class="com.company.fashiondesktop.entity.User"/>
-        <mapping class="com.company.fashiondesktop.entity.WishList"/>
-        <mapping class="com.company.fashiondesktop.entity.WishListDetail"/>
+        <!-- ✅ Khai báo Entity -->
+        <mapping class="Com.company.fashiondesktop.entity.User"/>
+        <mapping class="Com.company.fashiondesktop.entity.Cart"/>
+        <mapping class="Com.company.fashiondesktop.entity.CartDetail"/>
+        <mapping class="Com.company.fashiondesktop.entity.Order"/>
+        <mapping class="Com.company.fashiondesktop.entity.OrderDetail"/>
+        <mapping class="Com.company.fashiondesktop.entity.PaymentType"/>
+        <mapping class="Com.company.fashiondesktop.entity.Product"/>
+        <mapping class="Com.company.fashiondesktop.entity.PurchaseOrderDetail"/>
+        <mapping class="Com.company.fashiondesktop.entity.PurchaseOrder"/>
+        <mapping class="Com.company.fashiondesktop.entity.Role"/>
+        <mapping class="Com.company.fashiondesktop.entity.ShippingMethod"/>
+        <mapping class="Com.company.fashiondesktop.entity.Supplier"/>
+        <mapping class="Com.company.fashiondesktop.entity.WishList"/>
+        <mapping class="Com.company.fashiondesktop.entity.WishListDetail"/>
+        <mapping class="Com.company.fashiondesktop.entity.City"/>
+        <mapping class="Com.company.fashiondesktop.entity.Country"/>
+        <mapping class="Com.company.fashiondesktop.entity.District"/>
+        <mapping class="Com.company.fashiondesktop.entity.Ward"/> 
 
     </session-factory>
 </hibernate-configuration>

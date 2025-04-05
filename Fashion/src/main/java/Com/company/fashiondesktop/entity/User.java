@@ -9,30 +9,29 @@ import java.util.List;
 @Table(name = "users")
 public class User {
     @Id
-    @GeneratedValue(strategy = jakarta.persistence.GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int userId;
 
-    private String sex;
+    @Column(name = "fullName", columnDefinition = "NVARCHAR(256)")
+    private String fullName;
 
-    private String email;
-
-    private String activationCode;
-
+    @Column(name = "phoneNumber")
     private String phoneNumber;
 
-    @Column(columnDefinition = "NVARCHAR(256)")
-    private String firstName;
+    @Column(name = "gender")
+    private boolean gender;
 
-    @Column(columnDefinition = "NVARCHAR(256)")
-    private String lastName;
+    @Column(name = "email")
+    private String email;
 
+    @Column(name = "username")
+    private String username;
+
+    @Column(name = "password")
     private String password;
 
-    @Column(nullable = true )
-    private boolean isActive;
-
-    private String userName;
-
+    @Column(name = "avatar")
+    private String avatar;
     // address default
     @ManyToOne(cascade = {
             jakarta.persistence.CascadeType.PERSIST,
@@ -40,14 +39,14 @@ public class User {
             jakarta.persistence.CascadeType.DETACH,
             jakarta.persistence.CascadeType.REFRESH
     })
-    @JoinColumn(name = "address_id")
-    private Address address;
+    @JoinColumn(name = "wardID")
+    private Ward ward;
     //
     // private Ward sellingWard;
 
-    @OneToMany(mappedBy = "user")
-    private List<Review> listReviews;
-
+//    @OneToMany(mappedBy = "user")
+//    private List<Review> listReviews;
+//
     @ManyToMany(fetch = FetchType.EAGER,cascade = {
             jakarta.persistence.CascadeType.PERSIST,
             jakarta.persistence.CascadeType.MERGE,
@@ -60,12 +59,28 @@ public class User {
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
     private List<Order> listOrders;
 
-    public Address getAddress() {
-        return address;
+    public User(String userName, String password) {
+        this.username = userName;
+        this.password = password;
     }
 
-    public void setAddress(Address address) {
-        this.address = address;
+    public User() {
+    }
+
+//    public Address getAddress() {
+//        return ward;
+//    }
+//
+//    public void setAddress(Address address) {
+//        this.ward = address;
+//    }
+
+    public Ward getWard() {
+        return ward;
+    }
+
+    public void setWard(Ward ward) {
+        this.ward = ward;
     }
 
     public String getEmail() {
@@ -76,21 +91,6 @@ public class User {
         this.email = email;
     }
 
-    public String getFirstName() {
-        return firstName;
-    }
-
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
 
     public List<Order> getListOrders() {
         return listOrders;
@@ -100,13 +100,13 @@ public class User {
         this.listOrders = listOrders;
     }
 
-    public List<Review> getListReviews() {
-        return listReviews;
-    }
-
-    public void setListReviews(List<Review> listReviews) {
-        this.listReviews = listReviews;
-    }
+//    public List<Review> getListReviews() {
+//        return listReviews;
+//    }
+//
+//    public void setListReviews(List<Review> listReviews) {
+//        this.listReviews = listReviews;
+//    }
 
     public List<Role> getListRoles() {
         return listRoles;
@@ -132,13 +132,7 @@ public class User {
         this.phoneNumber = phoneNumber;
     }
 
-    public String getSex() {
-        return sex;
-    }
 
-    public void setSex(String sex) {
-        this.sex = sex;
-    }
 
     public int getUserId() {
         return userId;
@@ -148,35 +142,45 @@ public class User {
         this.userId = userId;
     }
 
-    public String getUserName() {
-        return userName;
-    }
-
-    public String getActivationCode() {
-        return activationCode;
-    }
-
-    public void setActivationCode(String activationCode) {
-        this.activationCode = activationCode;
-    }
 
     public String getPhoneNumber() {
         return phoneNumber;
     }
 
-    public boolean isActive() {
-        return isActive;
+    public String getFullName() {
+        return fullName;
     }
 
-    public void setActive(boolean active) {
-        isActive = active;
+    public void setFullName(String fullName) {
+        this.fullName = fullName;
     }
 
-    public void setUserName(String userName) {
-        this.userName = userName;
+    public boolean isGender() {
+        return gender;
     }
+
+    public void setGender(boolean gender) {
+        this.gender = gender;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getAvatar() {
+        return avatar;
+    }
+
+    public void setAvatar(String avatar) {
+        this.avatar = avatar;
+    }
+
     @Override
     public String toString() {
-        return "User{id=" + userId + ", username='" + userName + "'}"; // Don't include listRoles here
+        return "User{id=" + userId + ", username='" + username + "'}"; // Don't include listRoles here
     }
 }

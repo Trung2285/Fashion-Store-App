@@ -31,16 +31,16 @@ public class Order {
         private User user;
 
         // địa chỉ giao hàng
-        @ManyToOne(cascade = {
-                        jakarta.persistence.CascadeType.PERSIST,
-                        jakarta.persistence.CascadeType.MERGE,
-                        jakarta.persistence.CascadeType.DETACH,
-                        jakarta.persistence.CascadeType.REFRESH
-        })
-        @JoinColumn(name = "shipping_address_id", nullable = false)
-        private Address shippingAddress;
+//        @ManyToOne(cascade = {
+//                        jakarta.persistence.CascadeType.PERSIST,
+//                        jakarta.persistence.CascadeType.MERGE,
+//                        jakarta.persistence.CascadeType.DETACH,
+//                        jakarta.persistence.CascadeType.REFRESH
+//        })
+//        @JoinColumn(name = "shipping_address_id", nullable = false)
+//        private Address shippingAddress;
 
-        @OneToMany(mappedBy = "cart", cascade = CascadeType.ALL)
+        @OneToMany(mappedBy = "order", cascade = CascadeType.ALL)
         private List<OrderDetail> orderDetails;
 
         @ManyToOne(cascade = {
