@@ -18,6 +18,8 @@ public class DANGNHAP extends javax.swing.JFrame {
     
     public DANGNHAP() {
         initComponents();
+        this.setLocationRelativeTo(null);
+        this.setTitle("QUẢN LÍ BÁN HÀNG");
     }
     /**
      * This method is called from within the constructor to initialize the form.
@@ -36,6 +38,7 @@ public class DANGNHAP extends javax.swing.JFrame {
         NHAPMATKHAU = new javax.swing.JPasswordField();
         GHINHO = new javax.swing.JCheckBox();
         HIENMATKHAU = new javax.swing.JButton();
+        ANMATKHAU = new javax.swing.JButton();
         DANGNHAP = new javax.swing.JButton();
         DANGKY = new javax.swing.JLabel();
         QUENMATKHAU = new javax.swing.JLabel();
@@ -97,15 +100,35 @@ public class DANGNHAP extends javax.swing.JFrame {
         GHINHO.setText("Ghi nhớ");
         jPanel1.add(GHINHO, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 250, 100, -1));
 
-        HIENMATKHAU.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icon/eye.png"))); // NOI18N
+        HIENMATKHAU.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icon/hien.png"))); // NOI18N
         HIENMATKHAU.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 0, 0));
         HIENMATKHAU.setContentAreaFilled(false);
+        HIENMATKHAU.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                HIENMATKHAUMouseClicked(evt);
+            }
+        });
         HIENMATKHAU.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 HIENMATKHAUActionPerformed(evt);
             }
         });
         jPanel1.add(HIENMATKHAU, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 190, 40, 30));
+
+        ANMATKHAU.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icon/eye.png"))); // NOI18N
+        ANMATKHAU.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 0, 0));
+        ANMATKHAU.setContentAreaFilled(false);
+        ANMATKHAU.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ANMATKHAUMouseClicked(evt);
+            }
+        });
+        ANMATKHAU.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ANMATKHAUActionPerformed(evt);
+            }
+        });
+        jPanel1.add(ANMATKHAU, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 190, 40, 30));
 
         DANGNHAP.setBackground(new java.awt.Color(255, 51, 102));
         DANGNHAP.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
@@ -169,7 +192,7 @@ public class DANGNHAP extends javax.swing.JFrame {
     }//GEN-LAST:event_DANGNHAPActionPerformed
 
     private void DANGKYMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_DANGKYMouseClicked
-        Sign_in si = new Sign_in();
+        GuiSign_in si = new GuiSign_in();
         si.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_DANGKYMouseClicked
@@ -193,6 +216,11 @@ public class DANGNHAP extends javax.swing.JFrame {
     private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
         TENDANGNHAP.selectAll();
         TENDANGNHAP.requestFocus();
+        
+        // Thiết lập trạng thái ban đầu
+        NHAPMATKHAU.setEchoChar('*');      // Đảm bảo mật khẩu bị che
+        HIENMATKHAU.setVisible(true);  // Hiển thị label HIENMATKHAU
+        ANMATKHAU.setVisible(false);   // Ẩn label ANMATKHAU
     }//GEN-LAST:event_formWindowOpened
 
     private void NHAPMATKHAUFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_NHAPMATKHAUFocusGained
@@ -202,6 +230,24 @@ public class DANGNHAP extends javax.swing.JFrame {
     private void NHAPMATKHAUActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NHAPMATKHAUActionPerformed
         DANGNHAP.doClick();
     }//GEN-LAST:event_NHAPMATKHAUActionPerformed
+
+    private void ANMATKHAUActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ANMATKHAUActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ANMATKHAUActionPerformed
+
+    private void HIENMATKHAUMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_HIENMATKHAUMouseClicked
+        NHAPMATKHAU.setEchoChar((char) 0); // Hiển thị mật khẩu (không che)
+        HIENMATKHAU.setVisible(false); // Ẩn label HIENMATKHAU
+        ANMATKHAU.setVisible(true);    // Hiện label ANMATKHAU
+        NHAPMATKHAU.requestFocus();
+    }//GEN-LAST:event_HIENMATKHAUMouseClicked
+
+    private void ANMATKHAUMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ANMATKHAUMouseClicked
+        NHAPMATKHAU.setEchoChar('*');      // Che mật khẩu bằng dấu *
+        ANMATKHAU.setVisible(false);   // Ẩn label ANMATKHAU
+        HIENMATKHAU.setVisible(true);  // Hiện label HIENMATKHAU
+        NHAPMATKHAU.requestFocus();
+    }//GEN-LAST:event_ANMATKHAUMouseClicked
 
     /**
      * @param args the command line arguments
@@ -239,6 +285,7 @@ public class DANGNHAP extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton ANMATKHAU;
     private javax.swing.JLabel DANGKY;
     private javax.swing.JButton DANGNHAP;
     private javax.swing.JCheckBox GHINHO;
