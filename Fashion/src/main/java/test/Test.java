@@ -1,12 +1,13 @@
 package test;
 
-import Com.company.fashiondesktop.dao.UserDAO;
-import Com.company.fashiondesktop.entity.User;
+import Com.company.fashiondesktop.BUSINESSLOGIC.BLUser;
+import Com.company.fashiondesktop.SCHEMAOBJECT.UserDAO;
+import Com.company.fashiondesktop.SCHEMACLASS.User;
 
 public class Test {
     public static void main(String[] args) {
         UserDAO userDAO = new UserDAO();
-
+        BLUser blUser = new BLUser();
         // 🆕 1. Thêm User mới
 //        User newUser = new User();
 //        newUser.setFullName(" ho huu huy");
@@ -19,16 +20,16 @@ public class Test {
 //        System.out.println("✅ Đã thêm User mới!");
 
         // 🆕 2. Đăng nhập đúng mật khẩu
-        User loginUser = userDAO.login("nguyenvana", "123456");
+        User loginUser = blUser.login("nguyenvana", "123456");
         if (loginUser != null) {
             System.out.println("✅ Đăng nhập thành công: " + loginUser.getFullName());
         } else {
             System.out.println("❌ Sai mật khẩu hoặc tài khoản không tồn tại.");
         }
 
-        // 🆕 3. Đăng nhập với sai mật khẩu
-//        User wrongLogin = userDAO.login("nguyenvana", "wrongpassword");
-//        System.out.println(wrongLogin == null ? "✅ Sai mật khẩu, không thể đăng nhập!" : "❌ Lỗi: Đăng nhập sai vẫn thành công.");
+//         🆕 3. Đăng nhập với sai mật khẩu
+        User wrongLogin = blUser.login("nguyenvana", "wrongpassword");
+        System.out.println(wrongLogin == null ? "✅ Sai mật khẩu, không thể đăng nhập!" : "❌ Lỗi: Đăng nhập sai vẫn thành công.");
 
 //        // 🆕 4. Cập nhật User
 //        if (loginUser != null) {
@@ -46,7 +47,7 @@ public class Test {
 //        User deletedUser = userDAO.findById(loginUser.getUserId());
 //        System.out.println(deletedUser == null ? "✅ Xóa User thành công!" : "❌ Lỗi: User vẫn tồn tại sau khi xóa!");
 //
-
+//
 
 
 

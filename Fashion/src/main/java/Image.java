@@ -1,7 +1,7 @@
 
 
 
-import Com.company.fashiondesktop.entity.Product;
+import Com.company.fashiondesktop.SCHEMACLASS.Product;
 import jakarta.persistence.*;
 
 @Entity
