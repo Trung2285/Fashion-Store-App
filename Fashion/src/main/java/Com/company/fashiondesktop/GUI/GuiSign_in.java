@@ -1,12 +1,9 @@
 package Com.company.fashiondesktop.GUI;
 
-
-
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-
 /**
  *
  * @author levan
@@ -18,7 +15,10 @@ public class GuiSign_in extends javax.swing.JFrame {
      */
     public GuiSign_in() {
         initComponents();
+        
     }
+
+
 
     /**
      * This method is called from within the constructor to initialize the form.

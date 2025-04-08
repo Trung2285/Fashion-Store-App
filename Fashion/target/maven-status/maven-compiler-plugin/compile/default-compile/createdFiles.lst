@@ -38,6 +38,7 @@ Com\company\fashiondesktop\gui\DANGNHAP$2.class
 Com\company\fashiondesktop\SCHEMAOBJECT\UserDAO.class
 Com\company\fashiondesktop\SCHEMACLASS\Supplier.class
 Com\company\fashiondesktop\gui\GuiHangHoa$1.class
+test\MainFrame.class
 Com\company\fashiondesktop\gui\GuiKhachHang$3.class
 Com\company\fashiondesktop\gui\GuiSanPham$8.class
 Com\company\fashiondesktop\gui\GuiPhieuNhap$5.class
@@ -74,6 +75,7 @@ Com\company\fashiondesktop\SCHEMACLASS\User.class
 Com\company\fashiondesktop\gui\GuiSanPham$10.class
 Com\company\fashiondesktop\gui\GuiHangHoa$3.class
 Com\company\fashiondesktop\SCHEMACLASS\PaymentType.class
+test\TrangA.class
 Com\company\fashiondesktop\gui\GuiPhieuNhap$7.class
 Com\company\fashiondesktop\FashionDesktopApplication.class
 Com\company\fashiondesktop\gui\GuiChiTietDanhMuc$3.class
@@ -114,5 +116,6 @@ Com\company\fashiondesktop\gui\GuiHoaDon$5.class
 Com\company\fashiondesktop\gui\GuiChiTietDanhMuc.class
 Com\company\fashiondesktop\gui\GuiPhieuNhap$9.class
 Image.class
+test\TrangB.class
 Com\company\fashiondesktop\gui\DoiTac$4.class
 Com\company\fashiondesktop\BUSINESSLOGIC\BLUser.class

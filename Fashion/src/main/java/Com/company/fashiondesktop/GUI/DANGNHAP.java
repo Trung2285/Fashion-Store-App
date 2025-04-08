@@ -65,7 +65,7 @@ public class DANGNHAP extends javax.swing.JFrame {
         jPanel1.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 400, 90, 20));
 
         TENDANGNHAP.setBackground(new java.awt.Color(0, 0, 0));
-        TENDANGNHAP.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        TENDANGNHAP.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
         TENDANGNHAP.setForeground(new java.awt.Color(255, 255, 255));
         TENDANGNHAP.setText("abcxyz123@");
         TENDANGNHAP.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 0, 0));
@@ -188,7 +188,7 @@ public class DANGNHAP extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void DANGNHAPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DANGNHAPActionPerformed
-        // TODO add your handling code here:
+
     }//GEN-LAST:event_DANGNHAPActionPerformed
 
     private void DANGKYMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_DANGKYMouseClicked
@@ -202,15 +202,7 @@ public class DANGNHAP extends javax.swing.JFrame {
     }//GEN-LAST:event_TENDANGNHAPActionPerformed
 
     private void HIENMATKHAUActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HIENMATKHAUActionPerformed
-        if (!isPasswordVisible) {
-        // Nếu mật khẩu đang bị che, hiện mật khẩu
-        NHAPMATKHAU.setEchoChar((char) 0);
-        isPasswordVisible = true;
-    } else {
-        // Nếu mật khẩu đang hiện, che mật khẩu
-        NHAPMATKHAU.setEchoChar('*');
-        isPasswordVisible = false;
-    }
+
     }//GEN-LAST:event_HIENMATKHAUActionPerformed
 
     private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
@@ -218,7 +210,7 @@ public class DANGNHAP extends javax.swing.JFrame {
         TENDANGNHAP.requestFocus();
         
         // Thiết lập trạng thái ban đầu
-        NHAPMATKHAU.setEchoChar('*');      // Đảm bảo mật khẩu bị che
+//        NHAPMATKHAU.setEchoChar('*');      // Đảm bảo mật khẩu bị che
         HIENMATKHAU.setVisible(true);  // Hiển thị label HIENMATKHAU
         ANMATKHAU.setVisible(false);   // Ẩn label ANMATKHAU
     }//GEN-LAST:event_formWindowOpened

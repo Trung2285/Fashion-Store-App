@@ -9,9 +9,9 @@ package Com.company.fashiondesktop.GUI;
  */
 public class APPMAIN {
     public static void main(String[] args) {
-//        java.awt.EventQueue.invokeLater(() -> {
-//            new DangNhap().setVisible(true);
-//        });
+        java.awt.EventQueue.invokeLater(() -> {
+            new DANGNHAP().setVisible(true);
+        });
         System.out.println("123");
     }
 }
