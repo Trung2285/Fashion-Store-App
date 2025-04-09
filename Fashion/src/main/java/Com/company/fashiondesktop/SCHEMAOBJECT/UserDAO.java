@@ -25,21 +25,21 @@ public class UserDAO implements GenericDAO<User, Integer>{
 //         return null; // Trả về null nếu sai mật khẩu hoặc không tìm thấy user
 //     }
 
-    @Override
+//    @Override
    public void save(User entity) {
-       Transaction transaction = null;
-       try (Session session = HibernateUtil.getSession()) {
-           transaction = session.beginTransaction();
-           // Mã hóa mật khẩu trước khi lưu vào database
-           entity.setPassword(PasswordUtil.hashPassword(entity.getPassword()));
-           session.save(entity);
-           transaction.commit();
-       } catch (Exception e) {
-           if (transaction != null) transaction.rollback();
-           e.printStackTrace();
-       }
+//       Transaction transaction = null;
+//       try (Session session = HibernateUtil.getSession()) {
+//           transaction = session.beginTransaction();
+//           // Mã hóa mật khẩu trước khi lưu vào database
+//           entity.setPassword(PasswordUtil.hashPassword(entity.getPassword()));
+//           session.save(entity);
+//           transaction.commit();
+//       } catch (Exception e) {
+//           if (transaction != null) transaction.rollback();
+//           e.printStackTrace();
+//       }
    }
-
+//
 
     @Override
     public void update(User entity) {

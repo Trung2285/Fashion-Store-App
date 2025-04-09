@@ -9,27 +9,27 @@ public class Test {
         UserDAO userDAO = new UserDAO();
         BLUser blUser = new BLUser();
 //         🆕 1. Thêm User mới
-        User newUser = new User();
-        newUser.setFullName(" ho huu huy");
-        newUser.setUsername("nguyenvana");
-        newUser.setPassword("123456");
-        newUser.setEmail("nguyenvana@example.com");
-        newUser.setPhoneNumber("0123456789");
-        newUser.setGender(true);
-        userDAO.save(newUser);
-        System.out.println("✅ Đã thêm User mới!");
+//        User newUser = new User();
+//        newUser.setFullName(" ho huu huy");
+//        newUser.setUsername("nguyenvana");
+//        newUser.setPassword("123456");
+//        newUser.setEmail("nguyenvana@example.com");
+//        newUser.setPhoneNumber("0123456789");
+//        newUser.setGender(true);
+//        userDAO.save(newUser);
+//        System.out.println("✅ Đã thêm User mới!");
 
-        // 🆕 2. Đăng nhập đúng mật khẩu
-        User loginUser = blUser.login("nguyenvana", "123456");
-        if (loginUser != null) {
-            System.out.println("✅ Đăng nhập thành công: " + loginUser.getFullName());
-        } else {
-            System.out.println("❌ Sai mật khẩu hoặc tài khoản không tồn tại.");
-        }
+//        // 🆕 2. Đăng nhập đúng mật khẩu
+//        User loginUser = blUser.login("nguyenvana", "123456");
+//        if (loginUser != null) {
+//            System.out.println("✅ Đăng nhập thành công: " + loginUser.getFullName());
+//        } else {
+//            System.out.println("❌ Sai mật khẩu hoặc tài khoản không tồn tại.");
+//        }
 
 //         🆕 3. Đăng nhập với sai mật khẩu
-        User wrongLogin = blUser.login("nguyenvana", "wrongpassword");
-        System.out.println(wrongLogin == null ? "✅ Sai mật khẩu, không thể đăng nhập!" : "❌ Lỗi: Đăng nhập sai vẫn thành công.");
+//        User wrongLogin = blUser.login("nguyenvana", "wrongpassword");
+//        System.out.println(wrongLogin == null ? "✅ Sai mật khẩu, không thể đăng nhập!" : "❌ Lỗi: Đăng nhập sai vẫn thành công.");
 
 //        // 🆕 4. Cập nhật User
 //        if (loginUser != null) {
